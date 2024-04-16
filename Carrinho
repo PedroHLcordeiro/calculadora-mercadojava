@@ -1,0 +1,11 @@
+class Carrinho {
+    private double precoTotal;
+
+    public void soma(Conta conta) {
+        precoTotal += conta.getPreco();
+    }
+
+    public double getPrecoTotal() {
+        return precoTotal;
+    }
+}
