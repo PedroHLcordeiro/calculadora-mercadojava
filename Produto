@@ -1,0 +1,27 @@
+public class Produto {
+    public static void main(String[] args) {
+        Conta mercado = new Conta();
+        mercado.setPreco(45);
+        mercado.setNome("arroz");
+
+        Conta farmacia = new Conta();
+        farmacia.setPreco(25);
+        farmacia.setNome("condicionador");
+
+        Conta bar = new Conta();
+        bar.setPreco(15);
+        bar.setNome("cerveja");
+
+        Conta restaurante = new Conta();
+        restaurante.setPreco(60);
+        restaurante.setNome("pernil");
+
+        Carrinho calculadora = new Carrinho();
+        calculadora.soma(mercado);
+        calculadora.soma(farmacia);
+        calculadora.soma(bar);
+        calculadora.soma(restaurante);
+
+        System.out.println("preço total: " + calculadora.getPrecoTotal());
+    }
+} 
